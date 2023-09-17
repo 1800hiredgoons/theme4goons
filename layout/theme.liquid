@@ -8,10 +8,17 @@
     {{content_for_header}}
 </head>
 <body>
-    <header>
-        <h1>{{ shop.name }}</h1>
-    </header>
-    
+<header class="main-header">
+    <nav class="main-nav">
+        <ul class="nav-list">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li class="nav-logo"><a href="#"><img src="{{ 'your-logo.png' | asset_url }}" alt="Your Brand Name"></a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+        </ul>
+    </nav>
+
     {{ content_for_layout }}
     
     <footer>
